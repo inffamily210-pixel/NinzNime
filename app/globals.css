@@ -69,3 +69,36 @@ main.min-h-screen{max-width:none;margin:0;padding:32px 28px 70px}.home-wrap{max-
 .genre-arrow{margin-left:auto;color:var(--cyan);font-size:16px}
 @media(max-width:850px){.genre-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:600px){.genre-page{padding:0 0 30px}.genre-hero{padding:25px 20px;border-radius:16px}.genre-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.genre-tile{padding:14px 11px;gap:8px}.genre-name{font-size:12px}.genre-number{font-size:9px}}
+
+/* Anime detail and episode player */
+.watch-page{max-width:1100px;margin:0 auto;padding:5px 0 55px}
+.watch-back{display:inline-flex;margin:0 0 20px;color:#9aabba;font-size:12px;font-weight:700}
+.watch-back:hover{color:var(--cyan)}
+.watch-detail{display:flex;gap:25px;padding:23px;border:1px solid var(--line);border-radius:19px;background:linear-gradient(120deg,#121d2b,#0d1420);margin-bottom:28px}
+.watch-poster{width:170px;max-height:245px;aspect-ratio:3/4;object-fit:cover;border-radius:12px;background:#1b2634;flex:0 0 auto}
+.watch-poster-empty{display:grid;place-items:center;color:var(--cyan);font:700 25px 'Space Grotesk';text-align:center}
+.watch-info{min-width:0;align-self:center}
+.watch-info h1{font:700 clamp(25px,4vw,38px)/1.15 'Space Grotesk',sans-serif;margin:9px 0 12px}
+.watch-info p{color:#a8b4c3;font-size:13px;line-height:1.8;white-space:pre-line;margin:15px 0 0}
+.watch-tags{display:flex;flex-wrap:wrap;gap:7px}
+.watch-tags span,.episode-chip,.episode-total{border:1px solid rgba(99,229,241,.2);background:rgba(99,229,241,.07);color:var(--cyan);padding:6px 9px;border-radius:8px;font-size:10px;font-weight:700}
+.watch-player-section,.episode-section{padding:21px;border:1px solid var(--line);border-radius:18px;background:#0e1520;margin-bottom:25px}
+.watch-section-heading{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:16px}
+.watch-section-heading h2{font:700 21px 'Space Grotesk',sans-serif;margin:6px 0 0}
+.video-frame{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:13px;background:#020407;border:1px solid #263546}
+.video-frame iframe,.video-frame video{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:contain;background:#000}
+.player-error{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;color:#dce6ef}
+.player-error p{font-size:12px;color:#8e9bad}
+.player-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:15px;color:#aebaca;font-size:12px}
+.server-picker{display:flex;align-items:center;gap:9px}
+.server-picker select{background:#172434;color:#e6f0f8;border:1px solid #34475b;border-radius:8px;padding:8px 10px;max-width:160px;outline:none}
+.episode-total{color:#9caec0;border-color:var(--line);background:#131e2b}
+.episode-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px}
+.episode-button{display:flex;align-items:center;gap:7px;min-width:0;padding:12px 10px;border:1px solid var(--line);border-radius:10px;background:#131e2b;color:#cbd6e2;transition:.18s}
+.episode-button span{font-size:9px;color:#74869b;font-weight:800}
+.episode-button b{font-size:13px}
+.episode-button small{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10px;color:#91a0b2}
+.episode-button:hover,.episode-button.selected{border-color:rgba(99,229,241,.55);background:rgba(99,229,241,.1);color:var(--cyan)}
+.episode-empty{padding:22px;border:1px dashed #293748;border-radius:11px;color:#8b96a8;text-align:center;font-size:12px}
+@media(max-width:700px){.watch-page{padding:0 0 35px}.watch-detail{padding:14px;gap:14px;border-radius:15px}.watch-poster{width:105px;max-height:155px}.watch-info h1{font-size:21px}.watch-info p{font-size:11px;line-height:1.6;margin-top:9px;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}.watch-tags span{font-size:9px;padding:5px 7px}.watch-player-section,.episode-section{padding:13px;border-radius:14px}.watch-section-heading h2{font-size:18px}.episode-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}.episode-button{padding:11px 8px}.episode-button small{display:none}.player-controls{font-size:11px}.server-picker select{max-width:120px;padding:7px}.episode-chip{font-size:9px;padding:6px}}
+@media(min-width:701px) and (max-width:950px){.episode-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
