@@ -52,3 +52,20 @@ main.min-h-screen{max-width:none;margin:0;padding:32px 28px 70px}.home-wrap{max-
  .section-heading{margin-bottom:14px}
  .section-heading h2{font-size:20px}
 }
+
+/* Genre directory page */
+.genre-page{max-width:1100px;margin:0 auto;padding:10px 0 45px}
+.genre-hero{position:relative;overflow:hidden;padding:35px 30px 30px;margin-bottom:23px;border:1px solid rgba(99,229,241,.17);border-radius:20px;background:radial-gradient(ellipse at 85% 20%,rgba(39,145,165,.17),transparent 40%),linear-gradient(120deg,#111c2a,#0c1420)}
+.genre-hero h1{font:700 clamp(32px,5vw,48px)/1.1 'Space Grotesk',sans-serif;margin:12px 0 8px;letter-spacing:-1.5px}
+.genre-hero h1 em{font-style:normal;color:var(--cyan)}
+.genre-hero p{color:#9ba9ba;font-size:13px;line-height:1.7;margin:0;max-width:500px}
+.genre-count{display:inline-block;margin-top:20px;color:var(--cyan);font-size:9px;font-weight:800;letter-spacing:1.5px}
+.genre-fallback-note{padding:12px 15px;border:1px solid rgba(99,229,241,.16);border-radius:10px;color:#9aabba;background:#101a27;font-size:11px;margin:0 0 18px}
+.genre-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.genre-tile{display:flex;align-items:center;gap:12px;min-width:0;padding:17px 15px;border:1px solid rgba(148,163,184,.13);border-radius:13px;background:linear-gradient(140deg,#121c2a,#0e1520);transition:transform .18s,border-color .18s,background .18s}
+.genre-tile:hover{transform:translateY(-3px);border-color:rgba(99,229,241,.48);background:#142535}
+.genre-number{font:600 10px 'Space Grotesk',sans-serif;color:#64758a}
+.genre-name{font-size:13px;font-weight:700;color:#e4edf5;overflow-wrap:anywhere}
+.genre-arrow{margin-left:auto;color:var(--cyan);font-size:16px}
+@media(max-width:850px){.genre-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:600px){.genre-page{padding:0 0 30px}.genre-hero{padding:25px 20px;border-radius:16px}.genre-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.genre-tile{padding:14px 11px;gap:8px}.genre-name{font-size:12px}.genre-number{font-size:9px}}
